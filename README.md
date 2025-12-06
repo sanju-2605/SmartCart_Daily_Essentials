@@ -40,9 +40,13 @@ git clone https://github.com/sanju-2605/SmartCart_Daily_Essentials.git
 cd SmartCart_Daily_Essentials
 
 2. Install Dependencies
+   
 Frontend
+
 cd client
+
 npm install
+
 
 Backend
 cd ../server
