@@ -41,28 +41,39 @@ cd SmartCart_Daily_Essentials
 
 2. Install Dependencies
    
-Frontend
+ Frontend
 
-cd client
+ cd client
 
-npm install
+ npm install
 
 
 Backend
-cd ../server
-npm install
+
+ cd ../server
+ 
+ npm install
 
 3. Environment Variables
-Create a .env file inside the /server folder:
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-PORT=5000
+   
+ Create a .env file inside the /server folder:
 
-4. Run the Project
-Backend
-cd server
-npm run dev
+ MONGO_URI=your_mongodb_connection_string
+ 
+ JWT_SECRET=your_secret_key
+ 
+ PORT=5000
 
-Frontend
-cd client
-npm start
+5. Run the Project
+   
+ Backend
+ 
+ cd server
+ 
+ npm run dev
+
+ Frontend
+ 
+ cd client
+ 
+ npm start
