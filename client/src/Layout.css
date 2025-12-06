@@ -1,0 +1,20 @@
+/* MAIN LAYOUT FIX */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* SIDE BAR WIDTH FIX */
+.sidebar-fixed {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+/* CONTENT AREA FIX */
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #f6f8ff;
+  padding: 20px;
+}

@@ -1,0 +1,72 @@
+/* Full-screen center layout */
+.auth-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #4c37e5, #6f9cff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card box */
+.auth-box {
+  background: white;
+  width: 360px;
+  padding: 32px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo */
+.auth-logo {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+/* Inputs */
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.auth-input:focus {
+  border-color: #4c7df3;
+  box-shadow: 0px 0px 6px rgba(76, 125, 243, 0.4);
+}
+
+/* Button */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1dbb55;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.auth-btn:hover {
+  background: #159b46;
+}
+
+/* Text */
+.muted {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}

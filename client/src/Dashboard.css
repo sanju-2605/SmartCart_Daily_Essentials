@@ -1,0 +1,128 @@
+/* Whole page layout: sidebar + main */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* MAIN DASH CONTENT – perfectly centered */
+.dashboard-main {
+  margin-left: 220px;               /* space for sidebar */
+  flex: 1;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;              /* center ALL child sections */
+  gap: 24px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HERO CARD */
+.dashboard-hero {
+  background: linear-gradient(135deg, #6a5af9, #7b68ee);
+  color: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+.hero-logo {
+  width: 90px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STATS ROW */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 180px;
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* CATEGORIES */
+.categories-section {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.category-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.category-pill {
+  background: var(--card-bg);
+  color: var(--text);
+  padding: 10px 18px;
+  border-radius: 999px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* OFFER BANNER */
+.offer-banner {
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 24px 18px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #ff3fa4;
+}
+
+.shop-btn {
+  margin-top: 12px;
+  background: #06c167;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DARK THEME CARD COLORS */
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .category-pill,
+[data-theme="dark"] .offer-banner {
+  background: #1f1f26;
+  color: #f7f7f7;
+}

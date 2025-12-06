@@ -1,0 +1,312 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f6f8ff;
+  color: #222;
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+  background: #22c55e !important;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #16a34a !important;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid #16a34a;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #16a34a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #ebfff1;
+}
+
+/* ========== DASHBOARD HERO ========== */
+.dashboard-hero {
+  position: relative;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dashboard-hero img {
+  width: 90px;
+}
+
+/* ========== PRODUCT PAGE BUTTON ========== */
+.add-to-cart-btn {
+  background-color: #22c55e;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: rgb(50, 42, 138);
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+/* ========== CART PAGE ========== */
+.cart-content {
+  padding: 25px;
+  margin-left: 220px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  background: rgb(22, 10, 83);
+  gap: 18px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(225, 215, 215, 0.08);
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.qty-box button {
+  padding: 3px 8px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+.cart-summary-box {
+  margin-top: 35px;
+  margin-left: 220px;
+  text-align: center;
+}
+
+/* ========== CENTER LOGIN & OTP ========== */
+.center-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-card {
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgb(41, 9, 115);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+/* APP LAYOUT */
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* CONTENT SECTION ALWAYS NEXT TO SIDEBAR */
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px;    /* Sidebar width */
+  background: #f6f8ff;
+}
+
+/* SIDEBAR FIX WIDTH */
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+/* Light Theme (default) */
+:root {
+  --bg: #f6f8ff;
+  --card: white;
+  --text: #222;
+  --sidebar: #0a0a1a;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg: #0d0d0f;
+  --card: #161622;
+  --text: #f5f5f5;
+  --sidebar: #000;
+}
+
+/* Apply theme */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Update cards */
+.product-card,
+.dashboard-card,
+.settings-page,
+.banner {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--sidebar) !important;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #6c47ff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* === Toastify visibility fix (dark & light) === */
+.Toastify__toast {
+  font-size: 14px;
+}
+
+/* success toast */
+.Toastify__toast--success {
+  background: #f8f8f8 !important;
+  color: #1bb255 !important;
+}
+
+/* error toast */
+.Toastify__toast--error {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+/* for safety, set base text color */
+.Toastify__toast-body {
+  color: #ffffff !important;
+}
+
+/* ===============================
+   Elegant Toast Popup Redesign
+   =============================== */
+
+/* Base Toast */
+.Toastify__toast {
+  border-radius: 10px !important;
+  padding: 12px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  backdrop-filter: blur(4px);
+}
+
+/* SUCCESS TOAST (Add to Cart Popup) */
+.Toastify__toast--success {
+  background: #5ad072 !important; /* Soft elegant teal */
+  color: white !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Dark theme compatibility */
+.dark .Toastify__toast--success {
+  background: #d6e2d2 !important;
+  color: #ffffff !important;
+}
+
+/* Close button color */
+.Toastify__close-button > svg {
+  fill: white !important;
+}

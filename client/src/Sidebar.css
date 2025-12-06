@@ -1,0 +1,80 @@
+/* Sidebar.css */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #02031a;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.sidebar-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.sidebar {
+  width: 220px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0 20px;
+}
+
+
+.nav-links li {
+  margin: 18px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00e6b3;
+}
+
+.logout-btn {
+  margin: 20px;
+}
+
+.logout-btn a {
+  color: #e1d3d3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-badge {
+  background: #06c167;
+  color: white;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
