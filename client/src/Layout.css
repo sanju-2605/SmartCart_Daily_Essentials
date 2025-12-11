@@ -1,17 +1,17 @@
-/* MAIN LAYOUT FIX */
+/* MAIN LAYOUT */
 .app-layout {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* SIDE BAR WIDTH FIX */
+/* SIDE BAR WIDTH */
 .sidebar-fixed {
   width: 230px;
   flex-shrink: 0;
 }
 
-/* CONTENT AREA FIX */
+/* CONTENT AREA */
 .page-content {
   flex: 1;
   overflow-y: auto;

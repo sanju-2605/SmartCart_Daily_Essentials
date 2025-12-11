@@ -44,7 +44,7 @@ const products = [
     id: 6,
     name: "Tomatoes",
     price: 25,
-    image: "https://eaglefox.in/wp-content/uploads/2020/04/fresh-tomato-1024x1024.jpg",
+    image: "https://www.harighotra.co.uk/images/Shutterstock/tomaotoes1_560x560.jpg",
     category: "Fruits & Veg",
     description: "Fresh tomatoes – ideal for salads, curries, and daily cooking."
   },

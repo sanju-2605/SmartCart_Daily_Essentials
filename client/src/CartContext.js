@@ -7,7 +7,7 @@ const API_URL = "http://localhost:5000/cart";
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
-  // 🟡 Fetch cart from backend
+  // Fetch cart from backend
   useEffect(() => {
     fetch(`${API_URL}/all`)
       .then(res => res.json())
@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
       .catch(() => setCart([])); // fail-safe
   }, []);
 
-  // 🟢 Add to Cart (POST)
+  //  Add to Cart (POST)
   const addToCart = (product) => {
   setCart((prev) => {
     const existing = prev.find((p) => p._id === product._id);
@@ -28,7 +28,7 @@ export function CartProvider({ children }) {
   });
 };
 
-  // 🟣 Update Quantity (PUT)
+  //  Update Quantity (PUT)
   const updateQuantity = async (id, quantity) => {
     try {
       const res = await fetch(`${API_URL}/update/${id}`, {
@@ -43,7 +43,7 @@ export function CartProvider({ children }) {
     }
   };
 
-  // 🔴 Remove from Cart (DELETE)
+  // Remove from Cart (DELETE)
   const removeFromCart = async (id) => {
     try {
       await fetch(`${API_URL}/remove/${id}`, { method: "DELETE" });
@@ -53,7 +53,7 @@ export function CartProvider({ children }) {
     }
   };
 
-  // 🧹 Clear All Items
+  // Clear All Items
   const clearCart = async () => {
     try {
       await fetch(`${API_URL}/clear`, { method: "DELETE" });

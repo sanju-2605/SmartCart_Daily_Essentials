@@ -1,4 +1,4 @@
-/* ========== GLOBAL RESET ========== */
+/* GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #222;
 }
 
-/* ========== BUTTONS ========== */
+/*  BUTTONS */
 .btn-primary {
   background: #22c55e !important;
   border: none;
@@ -40,7 +40,7 @@ body {
   background: #ebfff1;
 }
 
-/* ========== DASHBOARD HERO ========== */
+/* DASHBOARD HERO  */
 .dashboard-hero {
   position: relative;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -56,7 +56,7 @@ body {
   width: 90px;
 }
 
-/* ========== PRODUCT PAGE BUTTON ========== */
+/*  PRODUCT PAGE BUTTON  */
 .add-to-cart-btn {
   background-color: #22c55e;
   border: none;
@@ -74,7 +74,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ========== CART PAGE ========== */
+/*CART PAGE*/
 .cart-content {
   padding: 25px;
   margin-left: 220px;
@@ -142,7 +142,7 @@ body {
   text-align: center;
 }
 
-/* ========== CENTER LOGIN & OTP ========== */
+/*  CENTER LOGIN & OTP  */
 .center-page {
   width: 100%;
   display: flex;
@@ -258,7 +258,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* === Toastify visibility fix (dark & light) === */
+/*  Toastify visibility fix (dark & light) */
 .Toastify__toast {
   font-size: 14px;
 }

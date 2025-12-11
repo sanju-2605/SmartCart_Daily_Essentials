@@ -7,13 +7,13 @@ import "./Auth.css";
 const API_URL = "http://localhost:5000/auth";
 
 export default function VerifyOtp() {
-  const location = useLocation();          // ✅ location defined FIRST
+  const location = useLocation();          // location defined FIRST
   const navigate = useNavigate();
 
   const phone = location.state?.phone || "";
-  const receivedOtp = location.state?.otp || "";   // ⭐ auto OTP from login
+  const receivedOtp = location.state?.otp || "";   // auto OTP from login
 
-  const [otp, setOtp] = useState(receivedOtp);     // ⭐ auto-filled safely
+  const [otp, setOtp] = useState(receivedOtp);     // auto-filled safely
 
   const verifyOtp = async () => {
     if (!otp) {

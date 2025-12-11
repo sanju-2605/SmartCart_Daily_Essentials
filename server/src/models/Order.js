@@ -16,6 +16,6 @@ const orderSchema = new mongoose.Schema({
   date: { type: Date, default: Date.now }
 });
 
-// 👇 IMPORTANT: Prevent overwrite error
+// Prevents overwrite error
 export default mongoose.models.Order || mongoose.model("Order", orderSchema);
 

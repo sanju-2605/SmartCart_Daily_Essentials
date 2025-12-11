@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 
-/* MAIN DASH CONTENT – perfectly centered */
+/* MAIN DASH CONTENT – centered */
 .dashboard-main {
   margin-left: 220px;               /* space for sidebar */
   flex: 1;
